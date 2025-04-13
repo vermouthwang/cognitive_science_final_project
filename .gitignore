@@ -141,3 +141,9 @@ lerna-debug.log*
 /coverage
 .coverage
 htmlcov/
+
+# Virtual Environment
+venv/
+ENV/
+.env
+.venv
