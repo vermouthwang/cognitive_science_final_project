@@ -1,0 +1,60 @@
+.knowledge-base {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.knowledge-base h2 {
+  margin: 0 0 8px 0;
+  color: #2d3748;
+  font-size: 1rem;
+}
+
+.knowledge-items {
+  flex: 1;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+  padding-right: 4px;
+}
+
+.knowledge-item {
+  background: white;
+  border-radius: 4px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border: 1px solid #e2e8f0;
+}
+
+.knowledge-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+  background: #f7fafc;
+  transition: transform 0.2s ease;
+}
+
+.knowledge-image:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.knowledge-text {
+  color: #2d3748;
+  word-break: break-word;
+  font-size: 0.8rem;
+  max-height: 80px;
+  overflow-y: auto;
+  padding: 2px;
+}
+
+.knowledge-timestamp {
+  font-size: 0.7rem;
+  color: #718096;
+  align-self: flex-end;
+} 

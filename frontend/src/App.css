@@ -1,0 +1,90 @@
+#root {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app-container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "collaborator consultant evaluator"
+    "knowledge knowledge knowledge";
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+}
+
+.grid-item {
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.collaborator {
+  grid-area: collaborator;
+  background-color: #9be1ae;
+}
+
+.consultant {
+  grid-area: consultant;
+  background-color: #fad60c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.consultant h2 {
+  margin: 0 0 16px 0;
+  color: #333;
+}
+
+.evaluator {
+  grid-area: evaluator;
+  background-color: #ff9794;
+}
+
+.knowledge {
+  grid-area: knowledge;
+  background-color: #93b5f1;
+}
